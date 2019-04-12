@@ -1,5 +1,7 @@
 use std::mem;
 
+const MEANING_OF_LIFE:u8 = 42;
+
 fn main() {
     let mut a:u16 = 500;
     println!("a = {}", a);
@@ -15,4 +17,16 @@ fn main() {
 
     let g:bool = 4 >= 4;
     println!("g = {}", g);
+
+    println!("pow = {}", i32::pow(2, 8));
+    println!("bitwise = {}", 2 << 10);
+
+    {
+        let a:i8 = 1;
+        println!("a = {}", a);
+    }
+
+    println!("a = {}", a);
+
+    println!("MEANING_OF_LIFE={}", MEANING_OF_LIFE);
 }

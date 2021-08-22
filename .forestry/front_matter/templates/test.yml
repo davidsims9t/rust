@@ -1,4 +1,9 @@
 ---
 label: Test
 hide_body: true
-fields: []
+fields:
+- name: test
+  type: include
+  config: {}
+  template: test
+  label: Test
